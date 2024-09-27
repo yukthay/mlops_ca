@@ -79,7 +79,7 @@ class ChurnPredictor:
 # Example usage:
 if __name__ == "__main__":
     # Sample customer data
-    data =pd.read_csv('C:/Users/yukth/OneDrive/Desktop/mlops_ca/customer_data.csv')
+    data = pd.read_csv('C:/Users/yukth/OneDrive/Desktop/mlops_ca/customer_data.csv')
 
     customer_df = pd.DataFrame(data)
     churn_predictor = ChurnPredictor(customer_df)
@@ -95,4 +95,3 @@ if __name__ == "__main__":
     # Calculate retention rate
     retention_rate = churn_predictor.calculate_retention_rate()
     print(f"Customer retention rate: {retention_rate:.2f}%")
-
